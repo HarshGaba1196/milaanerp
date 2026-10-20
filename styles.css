@@ -115,7 +115,7 @@ kbd { font: 500 .78em var(--mono); border: 1px solid var(--line); border-bottom-
 .tile p { color: var(--muted); font-size: .97rem; }
 
 /* pricing */
-.plans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; max-width: 920px; margin: 0 auto; }
 .plan { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 28px 24px 24px; }
 .plan h3 { font-size: 1.15rem; }
 .price { font: 800 2.7rem/1 var(--display); letter-spacing: -.03em; margin: 18px 0 6px; }
@@ -170,7 +170,6 @@ kbd { font: 500 .78em var(--mono); border: 1px solid var(--line); border-bottom-
   .hero-in { grid-template-columns: 1fr; gap: 40px; }
   .hero-t { max-width: 680px; }
   .hero-shot { transform: none; }
-  .plans { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
@@ -187,6 +186,7 @@ kbd { font: 500 .78em var(--mono); border: 1px solid var(--line); border-bottom-
   .strip-in { grid-template-columns: repeat(2, 1fr); }
   .strip-in div { border-left: 0; padding-left: 0; }
   .grid3 { grid-template-columns: repeat(2, 1fr); }
+  .plans { grid-template-columns: 1fr; max-width: 420px; }
   .dls { grid-template-columns: 1fr; }
   .sec { padding: 72px 0; }
   .feat + .feat { margin-top: 72px; }
