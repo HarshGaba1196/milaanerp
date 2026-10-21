@@ -33,6 +33,28 @@
 
   $('#yr').textContent = new Date().getFullYear();
 
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // "Made for your pharmacy / kirana store / …"
+  const rot = $('#rot'), trades = ['pharmacy', 'kirana store', 'garment shop', 'hardware store', 'distributorship', 'electronics shop', 'restaurant', 'wholesale business'];
+  if (rot && !still) {
+    let i = 0;
+    setInterval(() => { rot.classList.add('out'); setTimeout(() => { i = (i + 1) % trades.length; rot.textContent = trades[i]; rot.classList.remove('out'); }, 300); }, 2200);
+  }
+
+  // light / dark drag-to-compare
+  const ba = $('#ba'), range = $('#baRange');
+  if (ba && range) range.addEventListener('input', () => ba.style.setProperty('--pos', range.value + '%'));
+
+  // fade sections in as they scroll into view
+  if ('IntersectionObserver' in window && !still) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const t = e.target; t.classList.add('in'); io.unobserve(t); setTimeout(() => { t.style.transitionDelay = ''; }, 1200); } }), { rootMargin: '0px 0px -8% 0px' });
+    $$('.sec-h, .feat, .prob, .plan, .tile, .dl, .cmp-wrap, .how, .ba, .faq details, .closer .wrap').forEach((el, n) => {
+      if (el.getBoundingClientRect().top < innerHeight) return; // already on screen: leave it visible
+      el.classList.add('rv'); el.style.transitionDelay = (el.matches('.prob, .plan, .tile, .dl') ? (n % 4) * 70 : 0) + 'ms'; io.observe(el);
+    });
+  }
+
   // highlight the download for this visitor's computer
   const ua = navigator.userAgent, plat = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
   const os = /Win/i.test(plat) || /Windows/.test(ua) ? 'win' : /Mac/i.test(plat) && !/iPhone|iPad/.test(ua) && navigator.maxTouchPoints < 2 ? 'mac' : '';

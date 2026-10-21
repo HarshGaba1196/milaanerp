@@ -59,31 +59,44 @@
 
 <main>
   <section class="hero">
+    <div class="glow g1"></div><div class="glow g2"></div>
     <div class="wrap hero-in">
       <div class="hero-t">
-        <p class="eyebrow">Billing, stock &amp; GST for Indian small businesses</p>
-        <h1>Stop fighting your <br>billing software.<br><em>Start running your business.</em></h1>
+        <p class="pill-top"><span class="dot"></span> Made for your <span class="rot" id="rot">pharmacy</span></p>
+        <h1>Stop fighting your billing software.<br><em>Start running your business.</em></h1>
         <p class="lead">Most billing software is either old and confusing, or online-only and stuck when the internet drops. Milaan is neither. GST bills, stock with expiry, bank limits and loan EMIs on one clean screen, on your own computer, working even when the internet doesn’t.</p>
         <div class="hero-cta">
           <a class="btn primary lg" href="#download" id="heroDl">Download free 7-day trial</a>
-          <a class="btn lg" href="#pricing">See prices</a>
+          <a class="btn lg ghost-light" href="#pricing">See prices</a>
         </div>
-        <p class="small muted" id="heroNote">Windows 10/11 and macOS · No card, no sign-up · Your data is never locked</p>
+        <p class="small hero-note" id="heroNote">Windows 10/11 and macOS · No card, no sign-up · Your data is never locked</p>
       </div>
-      <figure class="shot hero-shot">
-        <img src="img/dashboard.jpg" alt="Milaan ERP dashboard showing today's sales, money to receive and pay, stock value, bank balances and a 30-day sales chart" width="2000" height="1250">
-      </figure>
+      <div class="hero-vis">
+        <figure class="shot win hero-shot">
+          <img src="img/dashboard.jpg" alt="Milaan ERP dashboard showing today's sales, money to receive and pay, stock value, bank balances and a 30-day sales chart" width="2000" height="1250">
+        </figure>
+        <div class="chip c1"><span class="ic ok">✓</span><span><b>Bill saved · INV-0013</b><small>₹878.00 · Apollo Family Clinic</small></span></div>
+        <div class="chip c2"><span class="ic warn">!</span><span><b>EMI reminder · 24 Oct</b><small>Tata Capital · ₹16,563.83</small></span></div>
+        <div class="chip c3"><span class="ic off"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M2 2l20 20M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.7M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8A15 15 0 0 0 10.7 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span><b>No internet? No problem.</b><small>Still billing</small></span></div>
+      </div>
     </div>
   </section>
 
-  <section class="strip">
-    <div class="wrap strip-in">
-      <div><b>Works offline</b><span>No internet needed to bill</span></div>
-      <div><b>Your data stays with you</b><span>Saved on your computer, not a server</span></div>
-      <div><b>GST ready</b><span>CGST, SGST, IGST and GST reports</span></div>
-      <div><b>Windows &amp; Mac</b><span>Free updates while your plan runs</span></div>
+  <section class="stats">
+    <div class="wrap stats-in">
+      <div><b>100%</b><span>works offline</span></div>
+      <div><b>₹0</b><span>AMC or add-ons</span></div>
+      <div><b>&lt;₹11</b><span>a day, yearly plan</span></div>
+      <div><b>7 days</b><span>free, no card</span></div>
     </div>
   </section>
+
+  <div class="marquee" aria-label="Made for many kinds of business">
+    <div class="mq-track">
+      <span>Pharmacies</span><span>Kirana stores</span><span>Garment shops</span><span>Electronics</span><span>Hardware</span><span>Distributors</span><span>Wholesalers</span><span>Restaurants</span><span>Service firms</span><span>Mobile shops</span>
+      <span aria-hidden="true">Pharmacies</span><span aria-hidden="true">Kirana stores</span><span aria-hidden="true">Garment shops</span><span aria-hidden="true">Electronics</span><span aria-hidden="true">Hardware</span><span aria-hidden="true">Distributors</span><span aria-hidden="true">Wholesalers</span><span aria-hidden="true">Restaurants</span><span aria-hidden="true">Service firms</span><span aria-hidden="true">Mobile shops</span>
+    </div>
+  </div>
 
   <section class="sec" id="why">
     <div class="wrap">
@@ -94,34 +107,42 @@
       </div>
       <div class="probs">
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l20 20M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.7M19 12.9a10 10 0 0 0-2.3-1.7M2 8.8a15 15 0 0 1 4.2-2.6M22 8.8A15 15 0 0 0 10.7 5M12 20h.01"/></svg></span>
           <p class="pain">“The internet went down and the whole counter stopped.”</p>
           <p class="fix"><b>Milaan works fully offline.</b> Billing, stock and reports never wait for a connection, because everything runs on your own computer.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg></span>
           <p class="pain">“Only one person in the shop knows how to use the software.”</p>
           <p class="fix"><b>Plain words, clean screens.</b> Press F2, pick the customer, type the item. New staff can learn billing in an afternoon, not after weeks of training.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M5 3 2 6M19 3l3 3"/></svg></span>
           <p class="pain">“We found expired stock on the shelf. Again.”</p>
           <p class="fix"><b>Batches and expiry dates are built in.</b> Milaan flags batches expiring in the next 3 months and lists items at their reorder level, before they turn into a loss.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 21h18M12 3l9 5H3z"/></svg></span>
           <p class="pain">“The bank called about the CC renewal and the EMI we forgot.”</p>
           <p class="fix"><b>Your bank limits and loans, on the dashboard.</b> See how much of your cash-credit limit is free and get reminded before every EMI and limit renewal.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 17v-3M12 17v-6M16 17v-2"/></svg></span>
           <p class="pain">“Our CA wants GST figures and it takes a whole day to pull them.”</p>
           <p class="fix"><b>GST reports in one click.</b> Rate-wise CGST, SGST and IGST for any month or year, ready to print, save as PDF or send as Excel.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12M6 9h12M14 4c3 0 3 10-3 10H6l9 7"/></svg></span>
           <p class="pain">“Every year there’s an AMC, a paid upgrade, or a charge for one more feature.”</p>
           <p class="fix"><b>One simple price, everything included.</b> Every feature in every plan, with updates that install themselves. No AMC, no add-ons.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
           <p class="pain">“I don’t like my business data sitting on someone else’s server.”</p>
           <p class="fix"><b>Your books stay on your computer.</b> Nothing is uploaded to us. Automatic restore points and one-click backups keep it safe.</p>
         </div>
         <div class="prob">
+          <span class="pic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></span>
           <p class="pain">“Switching software means typing in thousands of items again.”</p>
           <p class="fix"><b>Bring your data from Marg.</b> Import your items, batches, stock, customers and suppliers from an Excel/CSV export in minutes.</p>
         </div>
@@ -178,7 +199,7 @@
             <li>Receipts, payments and who owes you what</li>
           </ul>
         </div>
-        <figure class="shot"><img src="img/billing.jpg" alt="Making a new sales invoice in Milaan ERP" loading="lazy" width="2000" height="1250"></figure>
+        <figure class="shot win"><img src="img/billing.jpg" alt="Making a new sales invoice in Milaan ERP" loading="lazy" width="2000" height="1250"></figure>
       </div>
 
       <div class="feat rev">
@@ -191,7 +212,7 @@
             <li>Your own invoice numbering</li>
           </ul>
         </div>
-        <figure class="shot"><img src="img/invoice.jpg" alt="A printed GST tax invoice from Milaan ERP" loading="lazy" width="2000" height="1250"></figure>
+        <figure class="shot win"><img src="img/invoice.jpg" alt="A printed GST tax invoice from Milaan ERP" loading="lazy" width="2000" height="1250"></figure>
       </div>
 
       <div class="feat">
@@ -204,7 +225,7 @@
             <li>Low-stock and expiry alerts</li>
           </ul>
         </div>
-        <figure class="shot"><img src="img/items.jpg" alt="The items list with stock, rates and alerts" loading="lazy" width="2000" height="1250"></figure>
+        <figure class="shot win"><img src="img/items.jpg" alt="The items list with stock, rates and alerts" loading="lazy" width="2000" height="1250"></figure>
       </div>
 
       <div class="feat rev">
@@ -217,7 +238,7 @@
             <li>Full EMI schedule with interest and principal split</li>
           </ul>
         </div>
-        <figure class="shot"><img src="img/loan.jpg" alt="A machinery loan with its EMI schedule" loading="lazy" width="2000" height="1250"></figure>
+        <figure class="shot win"><img src="img/loan.jpg" alt="A machinery loan with its EMI schedule" loading="lazy" width="2000" height="1250"></figure>
       </div>
 
       <div class="feat">
@@ -230,7 +251,7 @@
             <li>Expenses by category</li>
           </ul>
         </div>
-        <figure class="shot"><img src="img/reports.jpg" alt="The GST report for the financial year" loading="lazy" width="2000" height="1250"></figure>
+        <figure class="shot win"><img src="img/reports.jpg" alt="The GST report for the financial year" loading="lazy" width="2000" height="1250"></figure>
       </div>
 
       <div class="grid3 more">
@@ -262,6 +283,23 @@
     </div>
   </section>
 
+  <section class="sec dusk">
+    <div class="wrap">
+      <div class="sec-h">
+        <p class="eyebrow">Day and night</p>
+        <h2>Easy on the eyes, from opening to closing</h2>
+        <p class="lead">A bright, clean look for the day and a dark mode for late evenings at the counter. Drag to see both.</p>
+      </div>
+      <div class="ba" id="ba" style="--pos:50%">
+        <img src="img/dashboard.jpg" alt="Milaan in light mode" loading="lazy" width="2000" height="1250">
+        <img class="ba-dark" src="img/dark.jpg" alt="Milaan in dark mode" loading="lazy" width="2000" height="1250">
+        <span class="ba-line"><span class="ba-knob">◂ ▸</span></span>
+        <span class="ba-tag l">Light</span><span class="ba-tag r">Dark</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare light and dark mode" id="baRange">
+      </div>
+    </div>
+  </section>
+
   <section class="sec alt" id="marg">
     <div class="wrap feat rev">
       <div class="feat-t">
@@ -275,7 +313,7 @@
         </ul>
         <p class="small muted">Stuck? Send us the file on WhatsApp and we will help you move.</p>
       </div>
-      <figure class="shot"><img src="img/marg.jpg" alt="Importing a Marg item master into Milaan ERP" loading="lazy" width="2000" height="1250"></figure>
+      <figure class="shot win"><img src="img/marg.jpg" alt="Importing a Marg item master into Milaan ERP" loading="lazy" width="2000" height="1250"></figure>
     </div>
   </section>
 
