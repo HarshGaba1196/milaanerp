@@ -114,10 +114,40 @@ kbd { font: 500 .78em var(--mono); border: 1px solid var(--line); border-bottom-
 .tile h4 { margin-bottom: 8px; }
 .tile p { color: var(--muted); font-size: .97rem; }
 
+/* problems */
+.probs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.prob { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 26px 26px 24px; display: grid; gap: 14px; align-content: start; }
+.pain { font: 600 1.2rem/1.35 var(--display); letter-spacing: -.01em; color: var(--text); padding-left: 16px; border-left: 3px solid var(--red); }
+.fix { color: var(--muted); }
+.fix b { color: var(--good); font-weight: 600; }
+
+/* comparison */
+.cmp-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); -webkit-overflow-scrolling: touch; }
+.cmp { width: 100%; border-collapse: collapse; min-width: 640px; font-size: .97rem; }
+.cmp th, .cmp td { padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: 0; }
+.cmp thead th { font: 700 .95rem var(--display); color: var(--muted); }
+.cmp thead th.me { color: var(--red); font-size: 1.05rem; }
+.cmp tbody th { font-weight: 600; width: 30%; }
+.cmp td { color: var(--muted); }
+.cmp .me { background: color-mix(in srgb, var(--red) 6%, transparent); }
+.cmp i { font-style: normal; font-weight: 600; }
+.cmp i::before { display: inline-block; width: 1.1em; }
+.cmp i.y { color: var(--good); } .cmp i.y::before { content: "✓"; }
+.cmp i.n { color: var(--red); } .cmp i.n::before { content: "✕"; }
+.cmp i.m { color: var(--muted); font-weight: 500; } .cmp i.m::before { content: "–"; }
+.cmp-note { margin-top: 16px; }
+.swipe { display: none; text-align: right; margin-bottom: 8px; }
+
+/* closer */
+.closer .lead { margin: 14px 0 30px; }
+.center-row { justify-content: center; }
+
 /* pricing */
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; max-width: 920px; margin: 0 auto; }
 .plan { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 28px 24px 24px; }
 .plan h3 { font-size: 1.15rem; }
+.sec-h .lead b { color: var(--text); }
 .price { font: 800 2.7rem/1 var(--display); letter-spacing: -.03em; margin: 18px 0 6px; }
 .price span { font-size: .55em; font-weight: 700; vertical-align: .55em; margin-right: 2px; }
 .per { color: var(--muted); font-size: .92rem; margin-bottom: 24px; flex: 1; }
@@ -188,6 +218,8 @@ kbd { font: 500 .78em var(--mono); border: 1px solid var(--line); border-bottom-
   .grid3 { grid-template-columns: repeat(2, 1fr); }
   .plans { grid-template-columns: 1fr; max-width: 420px; }
   .dls { grid-template-columns: 1fr; }
+  .probs { grid-template-columns: 1fr; }
+  .swipe { display: block; }
   .sec { padding: 72px 0; }
   .feat + .feat { margin-top: 72px; }
   .more { margin-top: 72px; }
